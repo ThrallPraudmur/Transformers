@@ -21,3 +21,28 @@ auto_update_conda: False
 channels:
   - C:\Python39\Lib\site-packages
 ```
+
+### Подключение pyodbc
+```python
+import pyodbc
+
+cnxn = pyodbc.connect(
+  driver = '{SQL Server}',
+  server = 'wrp-sandbox-db`',
+  database = 'WHBA',
+  username = 'username',
+  password = 'password',
+  trusted_connection = 'yes',
+  autocommit = True)
+
+cursor = cnxn.cursor()
+
+zap = '''
+
+'''
+result = pd.read_sql_query(zap, cnxn)
+display(result.head())
+
+cursor.close()
+cnxn.close()
+```
