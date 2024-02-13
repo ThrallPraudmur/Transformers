@@ -28,7 +28,7 @@ import pyodbc
 
 cnxn = pyodbc.connect(
   driver = '{SQL Server}',
-  server = 'wrp-sandbox-db`',
+  server = 'wrp-sandbox-db',
   database = 'WHBA',
   username = 'username',
   password = 'password',
