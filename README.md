@@ -1,6 +1,6 @@
 ### Настройка собственного окружения в Anaconda Promt
 ```python
-conda create --name your_name
+conda create --name your_name python=3.12
 conda activate your_name
 conda install python jupyter numpy pandas
 conda install -n your_name --use-local название файла + расширение
