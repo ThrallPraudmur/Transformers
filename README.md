@@ -4,6 +4,7 @@ conda create --name your_name
 conda activate your_name
 conda install python jupyter numpy pandas
 conda install -n your_name --use-local название файла + расширение
+conda remove -n your_name --all
 ```
 
 ### Содержимое файла .condarc
